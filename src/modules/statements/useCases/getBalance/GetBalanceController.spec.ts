@@ -5,7 +5,7 @@ import createConnection from "../../../../database/index"
 import { app } from "../../../../app";
 
 let connection: Connection;
-describe("Create Statement Controller", () => {
+describe("Get Balance Controller", () => {
   beforeAll(async () => {
     connection = await createConnection();
     await connection.runMigrations();
